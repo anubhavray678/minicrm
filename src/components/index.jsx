@@ -8,6 +8,7 @@ import {
   WalletCards,
 } from "lucide-react";
 import SidebarItem from "./item";
+import { signOut, useSession } from "next-auth/react";
 
 const items = [
   {
@@ -62,6 +63,11 @@ const Sidebar = () => {
           {items.map((item, index) => (
             <SidebarItem key={index} item={item} />
           ))}
+        </div>
+        <div className="flex items-center space-x-2 cursor-pointer">
+          <p className="text-sm font-semibold" onClick={signOut}>
+            Logout
+          </p>
         </div>
       </div>
     </div>
