@@ -38,7 +38,7 @@ export default function Home() {
   return (
     <div>
       {!session && (
-        <div className="flex justify-center items-center h-screen bg-gray-100">
+        <div className="flex justify-center items-center h-screen bg-red-100">
           <div className="bg-white p-6 rounded-lg shadow-lg">
             <h1 className="text-center p-2">
               Customer relationship management
