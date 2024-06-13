@@ -17,7 +17,7 @@ export default function Home() {
         }
 
         if (status === "authenticated") {
-          router.push("/");
+          router.push("/dashboard");
         }
       };
 
